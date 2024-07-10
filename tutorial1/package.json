@@ -1,0 +1,19 @@
+{
+    "name": "@hyperbytes/wappler-tutorial",
+    "version": "1.0.0",
+    "description": "Tutorial 1",
+    "license": "MIT",
+    "keywords": [
+        "wappler-extension"
+    ],
+    "author": {
+        "name": "Brian English - hyperbytes"
+    },
+    "keywords": [
+        "wappler-extension",
+        "server-connect",
+        "tutorial 1",
+        "node"
+    ],
+    "dependencies": {}
+}

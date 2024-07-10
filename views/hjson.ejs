@@ -1,0 +1,41 @@
+<!-- Wappler include head-page="layouts/main" fontawesome_5="cdn" is="dmx-app" id="hjson" appConnect="local" bootstrap5="local" -->
+<meta name="ac:route" content="/hjson">
+<div class="text-white bg-dark mt-4 container-fluid">
+    <div class="row">
+        <div class="col">
+            <p class="text-white">{
+                &nbsp; type: ' mymodule1_ mycode1, (<b class="text-danger">unique name for module</b>)
+                <br>&nbsp; module : 'mymodule1', (<b class="text-danger">Name of the associated .js file .i.e. mymodule1.js</b>)
+                <br>&nbsp; action : 'mycode1',(<b class="text-danger">this is the name used in the .js file within exports o.e. exports.mycode1 = async function (options) )</b>
+                <br>&nbsp; groupTitle : 'Test Modules',(<b class="text-danger">this is the group it is added to, can be existing or new)</b>
+                <br>&nbsp; groupIcon : 'fas fa-solid fa-question comp-data', (<b class="text-danger">font awesome icon </b>)
+                <br>&nbsp; title : 'Demo Test Module', (<b>module title</b>)
+                <br>&nbsp; icon : 'fas fa-solid fa-question comp-data', (<b class="text-danger">module icon</b>)
+                <br>&nbsp; properties : [
+                <br>&nbsp; &nbsp; {
+                <br>&nbsp; &nbsp; &nbsp; group: 'test data', (<b class="text-danger">the heading seen in the panel</b>)
+                <br>&nbsp; &nbsp; &nbsp; variables: [
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; { name: 'actionName', (<b class="text-danger">Unique name for the variable within the UI</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; optionName: 'name', (<b class="text-danger">name when passed to the action i.e. options.name</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; title: 'Name', (<b class="text-danger">the input prompt</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; type: 'text', (<b class="text-danger">data type of the prompt</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; required: true, (<b class="text-danger">is required, UI will flag error if not completed</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; defaultValue: '', (<b class="text-danger">the default value to use, DOES NOT not show in name input</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; baseName: "module1" (<b class="text-danger">directive for name input only to display a default name</b>)
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; },
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; { name: 'output', (<b class="text-danger">output property is mandatory if module is to have an output</b>)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; optionName: 'output',
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; title: 'Output',
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; type: 'boolean',
+                <br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; defaultValue: false (<b class="text-danger">must be set to default of false</b>)<br>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }
+                <br>&nbsp; &nbsp; &nbsp; ]<br>&nbsp; &nbsp; }
+            </p>
+        </div>
+        <div class="col ">
+            <p>// JavaScript Document mymodule.js<br>
+                exports.mycode1 = async function (options) {<br>
+                return "OK"<br>
+                }</p>
+        </div>
+
+    </div>
+</div>

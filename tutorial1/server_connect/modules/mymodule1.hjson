@@ -1,0 +1,32 @@
+{
+  type: 'mymodule1_mycode1',
+  module : 'mymodule1',
+  action : 'mycode1',
+  groupTitle : 'Tutorial Modules',
+  groupIcon : 'fas fa-solid fa-question comp-data',
+  title : 'My First Module',
+  icon : 'fas fa-solid fa-question comp-data',
+  serverModel : ['node'],
+  properties : [
+    {
+      group: 'Module Inputs',
+      variables: [
+        { name: 'actionName', 
+        optionName: 'name', 
+        title: 'Name', 
+        type: 'text', 
+        required: true, 
+        defaultValue: '',
+        baseName: "module1"
+        },
+          { name: 'output', 
+          optionName: 'output', 
+          title: 'Output', 
+          type: 'boolean', 
+          defaultValue: false 
+          }
+      ]
+    },
+    
+  ]
+}

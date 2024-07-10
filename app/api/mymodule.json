@@ -1,0 +1,7 @@
+{
+  "name": "module1",
+  "module": "mymodule1",
+  "action": "mycode1",
+  "options": {},
+  "output": true
+}
